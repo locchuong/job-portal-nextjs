@@ -1,10 +1,26 @@
-import Image from "next/image";
-import styles from "./page.module.scss";
+"use client";
 
-export default function Home() {
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+
+export default function Page() {
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
-    <main className={styles.main}>
-      <h1>Hello World</h1>
-    </main>
+    <div>
+      <p>Current theme: {resolvedTheme}</p>
+      <button onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}>
+        <span>Toggle Theme</span>
+      </button>
+    </div>
   );
 }

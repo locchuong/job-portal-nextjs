@@ -1,0 +1,44 @@
+[data-theme="light"] {
+  --theme-elevation-50: var(--color-slate-50);
+  --theme-elevation-100: var(--color-slate-100);
+  --theme-elevation-200: var(--color-slate-200);
+  --theme-elevation-300: var(--color-slate-300);
+  --theme-elevation-400: var(--color-slate-400);
+  --theme-elevation-500: var(--color-slate-500);
+  --theme-elevation-600: var(--color-slate-600);
+  --theme-elevation-700: var(--color-slate-700);
+  --theme-elevation-800: var(--color-slate-800);
+  --theme-elevation-900: var(--color-slate-900);
+  --theme-elevation-950: var(--color-slate-950);
+
+  --theme-bg: var(--theme-elevation-50);
+  --theme-text-primary: var(--theme-elevation-900);
+  --theme-text-secondary: var(--theme-elevation-600);
+  --theme-border-color: var(--theme-elevation-200);
+
+  color-scheme: light;
+  color: var(--theme-text-primary);
+}
+
+[data-theme="dark"] {
+  --theme-elevation-50: var(--color-slate-950);
+  --theme-elevation-100: var(--color-slate-900);
+  --theme-elevation-200: var(--color-slate-800);
+  --theme-elevation-300: var(--color-slate-700);
+  --theme-elevation-400: var(--color-slate-600);
+  --theme-elevation-500: var(--color-slate-500);
+  --theme-elevation-600: var(--color-slate-400);
+  --theme-elevation-700: var(--color-slate-300);
+  --theme-elevation-800: var(--color-slate-200);
+  --theme-elevation-900: var(--color-slate-100);
+  --theme-elevation-950: var(--color-slate-50);
+
+  // TODO: Dark theme, currently a copy of light
+  --theme-bg: var(--theme-elevation-50);
+  --theme-text-primary: var(--theme-elevation-900);
+  --theme-text-secondary: var(--theme-elevation-600);
+  --theme-border-color: var(--theme-elevation-200);
+
+  color-scheme: dark;
+  color: var(--theme-text-primary);
+}

@@ -1,3 +1,6 @@
+Project is currently ONGOING.
+Please see [Figma](https://www.figma.com/file/BLeepD9scvD2iKmsTFK7eX/ACME-Jobs?type=design&node-id=8631-892&mode=design&t=n85NkWdrJHTOx21h-0) for current designs.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
